@@ -1,0 +1,258 @@
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.section{
+    color: #000;
+}
+
+.s0{
+    background-image: url(img/main_background.png);
+    background-size: cover;
+}
+
+.s1{
+    background-image: url(img/sub01_background.png);
+    background-size: cover;
+}
+
+.s4{
+    background-image: url(img/sub04_background.png);
+    background-size: cover;
+}
+
+.s5{
+    background-image: url(img/sub05_bgcover.png);
+    background-size: cover;
+}
+
+
+
+
+
+/*header 영역*/
+
+#header{
+    margin-left: 360px;
+    position: fixed;
+    height: 100px;
+    width: 1200px;
+    z-index: 9;
+    background: #fff;
+}
+
+#header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+}
+
+#header ul li{
+    list-style: none;
+}
+
+#header ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+
+
+
+
+/*sub02 일러스트 영역*/
+
+.s2_top{
+    width: 1200px;
+    height: 330px;
+    text-align: center;
+    margin: auto;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.s2_top_left{
+    width: 385px;
+    height: 330px;
+    float: left;
+    padding-top: 121px;
+}
+
+.s2_top_middle{
+    width: 385px;
+    height: 330px;
+    float: left;
+}
+
+.s2_top_right{
+    width: 385px;
+    height: 330px;
+    float: left;
+    padding-top: 102px;
+}
+
+
+.s2_bottom{
+    width: 800px;
+    height: 330px;
+    text-align: center;
+    margin: auto;
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.s2_bottom_left{
+    width: 385px;
+    height: 330px;
+    float: left;
+    padding-top: 4px;
+}
+
+s2_bottom_right{
+    width: 385px;
+    height: 330px;
+    float: left;
+}
+
+
+
+
+
+/*sub03 고궁 역사*/
+
+.slidebox ul, li{
+    list-style:none;
+}
+
+.slidebox {
+    max-width:90%;
+    margin:0 auto;
+    position:relative; 
+    padding:0; 
+    box-sizing:border-box;
+}
+
+.slidebox .slidelist {
+    position:relative;
+    white-space:nowrap;
+    font-size:0;
+    overflow:hidden;
+}
+
+.slidebox .slidelist .slideitem {
+    position:relative;
+    display:inline-block;
+    vertical-align:middle;
+    background-color:#fff;
+    width:100%;
+    transition:all 1s;
+}
+
+.slidebox .slidelist .slideitem > a {
+    display:block;
+    width:auto;
+    position:relative;
+}
+
+.slidebox .slidelist .slideitem > a img {
+    max-width:100%;
+}
+
+.slidebox .slide-control [class*="control"] label {
+    position:absolute;
+    z-index:10;
+    top:50%;
+    transform:translateY(-50%);
+    padding:20px;
+    border-radius:50%;
+    cursor:pointer;
+}
+
+.slidebox .slide-control [class*="control"] label.prev {
+    left:300px;
+    background:#6c6463 url(img/left-arrow.png) center center / 50% no-repeat;
+}
+
+.slidebox .slide-control [class*="control"] label.next {
+    right:275px;
+    background:#6c6463 url(img/right-arrow.png) center center / 50% no-repeat;
+}
+
+
+[name="slide"] {display:none;}
+#slide01:checked ~ .slidelist .slideitem {left:0;}
+#slide02:checked ~ .slidelist .slideitem {left:-100%;}
+#slide03:checked ~ .slidelist .slideitem {left:-200%;}
+#slide04:checked ~ .slidelist .slideitem {left:-300%;}
+#slide05:checked ~ .slidelist .slideitem {left:-400%;}
+
+.slide-control [class*="control"] {display:none;}
+#slide01:checked ~ .slide-control .control01 {display:block;}
+#slide02:checked ~ .slide-control .control02 {display:block;}
+#slide03:checked ~ .slide-control .control03 {display:block;}
+#slide04:checked ~ .slide-control .control04 {display:block;}
+#slide05:checked ~ .slide-control .control05 {display:block;}
+
+
+
+
+
+
+
+
+
+/*sub05 예약하기*/
+
+#res_bt{
+    margin-left: 200px;
+    margin-bottom: 250px;
+}
+
+
+
+
+
+/*footer 인스타그램*/
+
+.insta{
+    text-align: center;
+    margin-top: 200px;
+}
+
+.footer_top{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.footer_top img{
+    width: 188px;
+    height: 188px;
+}
+
+.footer_bottom{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.footer_bottom img{
+    width: 188px;
+    height: 188px;
+}
+
+.footer_text{
+    background-color: #eee;
+    width: 100%;
+    height: 100px;
+    margin-top: 170px;
+    padding: 40px;
+    text-align: center;
+    font-weight: 500;
+}
